@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.guru_naver_map">
+    <!-- 위치정보 권한 허용 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.GuruNaverMap"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="쉼"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+            android:exported="true"
+            android:label="공릉종합복지관 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:label="월계문화복지센터 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true"
+            android:label="월계종합사회복지관 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="true"
+            android:label="노원1종합사회복지관 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true"
+            android:label="중계종합사회복지관 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true"
+            android:label="평화종합사회복지관 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true"
+            android:label="노원구청1층 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity8"
+            android:exported="true"
+            android:label="노블레스 관광호텔 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity9"
+            android:exported="true"
+            android:label="공릉1동주민센터 정보"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity10"
+            android:exported="true"
+            android:label="공릉2동주민센터 정보"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".Location"
+            android:exported="true"/>
+<!--            android:parentActivityName=".MainActivity"-->
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="zkzrs5yrs5" />
+    </application>
+
+</manifest>
