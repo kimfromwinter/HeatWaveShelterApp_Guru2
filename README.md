@@ -1,1 +1,3 @@
-# HeatWaveShelterApp_Guru_D
+#2023 서울여자대학교 여름방학 Programming GURU2 장려상 수상 프로젝트입니다.
+
+2023년 
